@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>area</title>
+    <link rel="stylesheet" href="../../base.css">
+    <style>
+        .grid-1 {
+            grid-template-columns: repeat(3, 200px);
+            grid-gap: 10px 30px;
+            grid-template-areas: ". header header" "side content content";
+        }
+        .header {
+            grid-area: header;
+        }
+        .side {
+            grid-area: side;
+        }
+        .content {
+            grid-area: content;
+        }
+    </style>
+</head>
+<body>
+<h1>area</h1>
+
+<details open>
+    <ul class="grid-1">
+        <li class="header">One</li>
+        <li class="side">Two</li>
+        <li class="content">Three</li>
+    </ul>
+</details>
+
+</body>
+</html>

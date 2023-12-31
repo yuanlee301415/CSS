@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>align-content</title>
+    <link rel="stylesheet" href="../../base.css">
+    <style>
+        ul {
+            grid-template-columns: repeat(3, 100px);
+            grid-template-rows: repeat(2, 80px);
+            grid-gap: 10px 30px;
+            height: 280px;
+        }
+        .grid-1 {
+            align-content: start;
+        }
+        .grid-2 {
+            align-content: end;
+        }
+        .grid-3 {
+            align-content: center;
+        }
+        .grid-4 {
+            align-content: space-around;
+        }
+        .grid-5 {
+            align-content: space-between;
+        }
+        .grid-6 {
+            align-content: space-evenly;
+        }
+        .grid-7 {
+            align-content: stretch;
+        }
+    </style>
+</head>
+<body>
+<h1>align-content</h1>
+
+<details open>
+    <summary>align-content: start</summary>
+    <ul class="grid-1">
+        <li>One</li>
+        <li>Two</li>
+        <li>Three</li>
+        <li>Four</li>
+        <li>Five</li>
+        <li>Six</li>
+        <li>Seven</li>
+        <li>Eight</li>
+        <li>Nine</li>
+    </ul>
+</details>
+
+<details open>
+    <summary>align-content: end</summary>
+    <ul class="grid-2">
+        <li>One</li>
+        <li>Two</li>
+        <li>Three</li>
+        <li>Four</li>
+        <li>Five</li>
+        <li>Six</li>
+        <li>Seven</li>
+        <li>Eight</li>
+        <li>Nine</li>
+    </ul>
+</details>
+
+<details open>
+    <summary>align-content: center</summary>
+    <ul class="grid-3">
+        <li>One</li>
+        <li>Two</li>
+        <li>Three</li>
+        <li>Four</li>
+        <li>Five</li>
+        <li>Six</li>
+        <li>Seven</li>
+        <li>Eight</li>
+        <li>Nine</li>
+    </ul>
+</details>
+
+<details open>
+    <summary>align-content: space-around</summary>
+    <ul class="grid-4">
+        <li>One</li>
+        <li>Two</li>
+        <li>Three</li>
+        <li>Four</li>
+        <li>Five</li>
+        <li>Six</li>
+        <li>Seven</li>
+        <li>Eight</li>
+        <li>Nine</li>
+    </ul>
+</details>
+
+<details open>
+    <summary>align-content: space-between</summary>
+    <ul class="grid-5">
+        <li>One</li>
+        <li>Two</li>
+        <li>Three</li>
+        <li>Four</li>
+        <li>Five</li>
+        <li>Six</li>
+        <li>Seven</li>
+        <li>Eight</li>
+        <li>Nine</li>
+    </ul>
+</details>
+
+<details open>
+    <summary>align-content: space-evenly</summary>
+    <ul class="grid-6">
+        <li>One</li>
+        <li>Two</li>
+        <li>Three</li>
+        <li>Four</li>
+        <li>Five</li>
+        <li>Six</li>
+        <li>Seven</li>
+        <li>Eight</li>
+        <li>Nine</li>
+    </ul>
+</details>
+
+<details open>
+    <summary>align-content: stretch</summary>
+    <ul class="grid-7">
+        <li>One</li>
+        <li>Two</li>
+        <li>Three</li>
+        <li>Four</li>
+        <li>Five</li>
+        <li>Six</li>
+        <li>Seven</li>
+        <li>Eight</li>
+        <li>Nine</li>
+    </ul>
+</details>
+
+</body>
+</html>
