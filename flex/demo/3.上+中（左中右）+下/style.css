@@ -1,0 +1,50 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+html {
+    font-size: 14px;
+    line-height: 24px;
+}
+.app {
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+header {
+    background-color: lightgreen;
+    flex: 0 0 100px;
+}
+
+section {
+    background-color: lightgrey;
+    flex: 1 1 100%;
+    display: flex;
+    overflow: hidden;
+}
+
+nav {
+    background-color: lightskyblue;
+    flex: 0 0 200px;
+    overflow-y: auto;
+}
+main {
+    background-color: lightseagreen;
+    flex: 1;
+    overflow-y: auto;
+}
+aside {
+    background-color: lightslategrey;
+    flex: 0 0 300px;
+    overflow-y: auto;
+}
+
+footer {
+    background-color: lightcoral;
+    flex: 0 0 50px;
+}
