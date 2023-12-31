@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>3.flex-grow</title>
+    <link rel="stylesheet" href="../base.css">
+    <style>
+        ul {
+            border: none;
+            width: 600px;
+        }
+        li {
+            font-size: 14px;
+            line-height: 24px;
+            margin: 0;
+            border: none;
+            width: 100px;
+        }
+        li:nth-child(1) {
+            background-color: lightblue;
+        }
+        li:nth-child(2) {
+            background-color: lightcoral;
+        }
+        li:nth-child(3) {
+            background-color: lightgreen;
+        }
+    </style>
+</head>
+<body>
+<h1>flex-grow</h1>
+<h2>总宽：600px, 各项宽度：100px</h2>
+
+<details open>
+    <summary>放大宽度：（总宽 - 各项宽度 * 3）/ （1 + 1）</summary>
+    <summary>放大宽度：（600 - 100 * 3）/ 2 = 150</summary>
+    <ul>
+        <li style="flex-grow: 0">flex-grow: 0(100 + 150 * 0 = 100)</li>
+        <li>默认值，不放大(100 + 150 * 0 = 100)</li>
+        <li>默认值，不放大(100 + 150 * 0 = 100)</li>
+    </ul>
+</details>
+
+<details open>
+    <summary>放大宽度：（总宽 - 各项宽度 * 3）/ （1 + 2）</summary>
+    <summary>放大宽度：（600 - 100 * 3）/ 3 = 100</summary>
+    <ul>
+        <li style="flex-grow: 0">flex-grow: 0(100 + 100 * 0 = 100)</li>
+        <li style="flex-grow: 1">flex-grow: 1(100 + 100 * 1 = 200)</li>
+        <li style="flex-grow: 2">flex-grow: 2(100 + 100 * 2 = 300)</li>
+    </ul>
+</details>
+
+<details open>
+    <summary>放大宽度：（总宽 - 各项宽度 * 3）/ （1 + 2 + 3）</summary>
+    <summary>放大宽度：（600 - 100 * 3）/ 6 = 50</summary>
+    <ul>
+        <li style="flex-grow: 1">flex-grow: 1(100 + 50 * 1 = 150)</li>
+        <li style="flex-grow: 2">flex-grow: 1(100 + 50 * 2 = 200)</li>
+        <li style="flex-grow: 3">flex-grow: 1(100 + 50 * 3 = 250)</li>
+    </ul>
+</details>
+
+</body>
+</html>
