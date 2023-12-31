@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>2. flex-wrap</title>
+    <link rel="stylesheet" href="../../base.css">
+    <style>
+        ul {
+            width: 350px;
+        }
+        .no-wrap {
+            flex-wrap: nowrap;
+        }
+
+        .wrap-reverse {
+            flex-wrap: wrap-reverse;
+        }
+
+        .wrap {
+            flex-wrap: wrap;
+        }
+    </style>
+</head>
+<body>
+<h1>flex-wrap</h1>
+<h2>flex-wrap：容器内元素是否可以换行</h2>
+<xmp>
+.container {
+    flex-wrap: nowrap | wrap | wrap-reverse;
+}
+</xmp>
+<details open>
+    <summary>no-wrap</summary>
+    <ul class="no-wrap">
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+    </ul>
+</details>
+
+<details open>
+    <summary>wrap</summary>
+    <ul class="wrap">
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+    </ul>
+</details>
+
+<details open>
+    <summary>wrap-reverse</summary>
+    <ul class="wrap-reverse">
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+    </ul>
+</details>
+</body>
+</html>

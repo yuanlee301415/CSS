@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>5. align-items</title>
+    <link rel="stylesheet" href="../../base.css">
+    <style>
+        li:nth-child(1) {
+            height: 100px;
+        }
+        li:nth-child(2) {
+            height: 200px;
+        }
+        li:nth-child(3) {
+            height: 300px;
+        }
+
+        .flex-start {
+            align-items: flex-start;
+        }
+        .flex-end {
+            align-items: flex-end;
+        }
+        .center {
+            align-items: center;
+        }
+        .baseline {
+            align-items: baseline;
+        }
+        .stretch {
+            height: 300px;
+            align-items: stretch;
+        }
+        .stretch li {
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+<h1>5. align-items</h1>
+<h2>元素在交叉轴上的对齐方式</h2>
+<xmp>
+.container {
+    align-items: flex-start | flex-end | center | baseline | stretch;
+}
+</xmp>
+
+<details open>
+    <summary>flex-start</summary>
+    <ul class="flex-start">
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+    </ul>
+</details>
+
+<details open>
+    <summary>flex-end</summary>
+    <ul class="flex-end">
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+    </ul>
+</details>
+
+<details open>
+    <summary>center</summary>
+    <ul class="center">
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+    </ul>
+</details>
+
+<details open>
+    <summary>baseline</summary>
+    <ul class="baseline">
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+    </ul>
+</details>
+
+<details open>
+    <summary>stretch</summary>
+    <ul class="stretch">
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+    </ul>
+</details>
+</body>
+</html>

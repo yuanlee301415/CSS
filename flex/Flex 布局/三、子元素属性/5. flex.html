@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>5. flex</title>
+    <link rel="stylesheet" href="../../base.css">
+    <style>
+        .flex-default-1 li {
+            flex: 0 1 auto;
+        }
+        .flex-default-2 li {
+            width: 50%;
+            flex: 0 1 auto;
+        }
+
+        .flex-none-1 li {
+            flex: 0 0 auto;
+        }
+        .flex-none-2 li {
+            width: 50%;
+            flex: 0 0 auto;
+        }
+
+        .flex-0-1 li {
+            flex: 0 1 0%;
+        }
+        .flex-0-2 li {
+            width: 50%;
+            flex: 0 1 0%;
+        }
+
+        .flex-auto-1 li {
+            flex: 1 1 auto;
+        }
+        .flex-auto-2 li {
+            width: 50%;
+            flex: 1 1 auto;
+        }
+    </style>
+</head>
+<body>
+<h1>5. flex</h1>
+<h2>flex-grow, flex-shrink 和 flex-basis的简写，后两个属性可选。</h2>
+<h2>默认值为：flex:0 1 auto。</h2>
+<xmp>
+.item{
+    flex: none | [ <'flex-grow'> <'flex-shrink'>? || <'flex-basis'> ]
+}
+</xmp>
+
+<h3>flex: 0 1 auto</h3>
+<details open>
+    <summary>flex-default-1</summary>
+    <ul class="flex-default-1">
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+    </ul>
+</details>
+
+<details open>
+    <summary>flex-default-2</summary>
+    <ul class="flex-default-2">
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+    </ul>
+</details>
+
+<h3>flex: 0 0 auto</h3>
+<details open>
+    <summary>flex-none-1</summary>
+    <ul class="flex-none-1">
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+    </ul>
+</details>
+<details open>
+    <summary>flex-none-2</summary>
+    <ul class="flex-none-2">
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+    </ul>
+</details>
+
+<h3>flex: 0 0 0%</h3>
+<details open>
+    <summary>flex-0-1</summary>
+    <ul class="flex-0-1">
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+    </ul>
+</details>
+
+<details open>
+    <summary>flex-0-2</summary>
+    <ul class="flex-0-2">
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+    </ul>
+</details>
+
+<h3>flex: 1 1 auto</h3>
+<details open>
+    <summary>flex-auto-2</summary>
+    <ul class="flex-auto-1">
+        <li>1111111111111111111111-END.</li>
+        <li>2</li>
+        <li>3</li>
+    </ul>
+</details>
+
+<details open>
+    <summary>flex-auto-2</summary>
+    <ul class="flex-auto-2">
+        <li>1111111111111111111111-END.</li>
+        <li>2</li>
+        <li>3</li>
+    </ul>
+</details>
+
+</body>
+</html>

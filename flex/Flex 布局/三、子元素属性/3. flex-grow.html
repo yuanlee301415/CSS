@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>3. flex-grow</title>
+    <link rel="stylesheet" href="../../base.css">
+    <style>
+
+    </style>
+</head>
+<body>
+<h1>3. flex-grow</h1>
+<h2>项目的放大比例，默认为0，即如果存在剩余空间时也不放大。</h2>
+<h2>当容器中所有的项目都设置了flex-basis属性时，如果仍有是剩余的空间，设置的 flex-grow 属性才能生效。</h2>
+<h2></h2>
+<xmp>
+.item {
+    flex-grow: <integer>;
+}
+</xmp>
+
+<details open>
+    <summary></summary>
+    <ul>
+        <li style="flex-grow: 1">1</li>
+        <li style="flex-grow: 2">2</li>
+        <li style="flex-grow: 3">3</li>
+    </ul>
+</details>
+
+<details open>
+    <summary></summary>
+    <ul>
+        <li style="flex-grow: 1">1</li>
+        <li style="flex-grow: 2">2</li>
+        <li style="flex-grow: 1">3</li>
+    </ul>
+</details>
+
+</body>
+</html>

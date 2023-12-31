@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>4. flex-shrink</title>
+    <link rel="stylesheet" href="../../base.css">
+    <style>
+        li {
+            width: 50%;
+        }
+    </style>
+</head>
+<body>
+<h1>4. flex-shrink</h1>
+<h2>项目的缩小比例，默认为1，即如果空间不足，该项目将缩小。</h2>
+<xmp>
+.item {
+    flex-shrink: <number>;
+}
+</xmp>
+
+<details open>
+    <summary></summary>
+    <ul>
+        <li style="flex-shrink: 1">1</li>
+        <li style="flex-shrink: 1">2</li>
+        <li style="flex-shrink: 1">3</li>
+    </ul>
+</details>
+
+<details open>
+    <summary></summary>
+    <ul>
+        <li style="flex-shrink: 1">1</li>
+        <li style="flex-shrink: 2">2</li>
+        <li style="flex-shrink: 3">3</li>
+    </ul>
+</details>
+
+<details open>
+    <summary></summary>
+    <ul>
+        <li style="flex-shrink: 0">1</li>
+        <li style="flex-shrink: 0">2</li>
+        <li style="flex-shrink: 0">3</li>
+    </ul>
+</details>
+
+<details open>
+    <summary></summary>
+    <ul>
+        <li>1</li>
+        <li style="flex-shrink: 0">2</li>
+        <li style="flex-shrink: 0">3</li>
+    </ul>
+</details>
+
+
+</body>
+</html>

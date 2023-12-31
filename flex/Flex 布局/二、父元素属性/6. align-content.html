@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>6. align-content</title>
+    <link rel="stylesheet" href="../../base.css">
+    <style>
+        ul {
+            width: 250px;
+            height: 400px;
+            flex-wrap: wrap;
+        }
+        .flex-start {
+            align-content: flex-start;
+        }
+        .flex-end {
+            align-content: flex-end;
+        }
+        .center {
+            align-content: center;
+        }
+        .space-between {
+            align-content: space-between;
+        }
+        .space-around {
+            align-content: space-around;
+        }
+        .stretch {
+            align-content: stretch;
+        }
+    </style>
+</head>
+<body>
+<h1>6. align-content</h1>
+<h2>多根轴线对齐方式</h2>
+<xmp>
+.container {
+    align-content: flex-start | flex-end | center | space-between | space-around | stretch;
+}
+</xmp>
+
+<details open>
+    <summary>flex-start</summary>
+    <ul class="flex-start">
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+    </ul>
+</details>
+
+<details open>
+    <summary>flex-end</summary>
+    <ul class="flex-end">
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+    </ul>
+</details>
+
+<details open>
+    <summary>center</summary>
+    <ul class="center">
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+    </ul>
+</details>
+
+<details open>
+    <summary>space-between</summary>
+    <ul class="space-between">
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+    </ul>
+</details>
+
+<details open>
+    <summary>space-around</summary>
+    <ul class="space-around">
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+    </ul>
+</details>
+
+<details open>
+    <summary>stretch</summary>
+    <ul class="stretch">
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+    </ul>
+</details>
+
+</body>
+</html>
