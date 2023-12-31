@@ -1,0 +1,9 @@
+{
+  "name": "css",
+  "version": "1.0.0",
+  "description": "CSS 学习",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yuanlee301415/CSS.git"
+  }
+}
