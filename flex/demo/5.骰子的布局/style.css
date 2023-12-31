@@ -1,0 +1,93 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+html {
+    font-size: 12px;
+    line-height: 24px;
+}
+body {
+    padding: 1rem;
+    display: flex;
+}
+
+ul {
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    width: 100px;
+    height: 100px;
+    background-color: lightskyblue;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+li {
+    list-style: none;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 100%;
+    background-color: darkcyan;
+    color: white;
+}
+
+.one {
+    justify-content: center;
+    align-items: center;
+}
+
+.two {
+    justify-content: space-between;
+}
+.two li:nth-child(2){
+    align-self: flex-end;
+}
+
+.three li:nth-child(2){
+    align-self: center;
+}
+.three li:nth-child(3) {
+    align-self: flex-end;
+}
+
+.four {
+    flex-wrap: wrap;
+    align-content: space-between;
+}
+.four ol {
+    flex-basis: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.five {
+    flex-direction: column;
+    justify-content: space-between;
+}
+.five ol {
+    display: flex;
+    justify-content: space-between;
+}
+.five ol:nth-child(2) {
+    align-self: center;
+}
+
+.six {
+    flex-direction: column;
+    justify-content: space-between;
+}
+.six ol {
+    display: flex;
+    justify-content: space-between;
+}
+
+.six-2 {
+    flex-wrap: wrap;
+    align-content: space-between;
+}
+.six-2 ol {
+    display: flex;
+    flex-basis: 100%;
+    justify-content: space-between;
+}
