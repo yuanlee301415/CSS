@@ -1,0 +1,232 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 12px;
+    line-height: 24px;
+}
+li {
+    list-style: none;
+}
+
+.app {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+header {
+    flex: 0 0 70px;
+    background-color: #242f42;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+}
+header .left {
+    display: flex;
+    align-items: center;
+}
+header .collapse {
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+header .collapse b {
+    padding: 0 20px 8px;
+    font-size: 30px;
+}
+header .right {
+    display: flex;
+    align-items: center;
+}
+header .right > * {
+    margin: 0 10px;
+}
+header .letter {
+    position: relative;
+}
+header .letter i {
+    position: absolute;
+    top: -3px;
+    right: -5px;
+    width: 8px;
+    height: 8px;
+    background-color: #f56c6c;
+    border-radius: 50%;
+}
+header .avatar {
+    width: 35px;
+    height: 35px;
+    border-radius: 100%;
+    overflow: hidden;
+}
+header .avatar img {
+    width: 100%;
+}
+
+.body {
+    flex: 1;
+    display: flex;
+    overflow: hidden;
+}
+nav {
+    background-color: #324157;
+    flex: 0 0 250px;
+    overflow-y: auto;
+}
+nav li {
+    text-indent: 2rem;
+    color: #fff;
+    line-height: 55px;
+    white-space: nowrap;
+    overflow-x: hidden;
+    cursor: pointer;
+}
+nav li:hover {
+    background-color: #409eff;
+}
+
+section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+.tags {
+    flex: 0 0 30px;
+    background-color: #fff;
+    box-shadow: 10px 5px 10px #f00;
+    display: flex;
+}
+.tags ul {
+    flex: 1;
+}
+.tags ul {
+    display: flex;
+    align-items: center;
+    overflow-x: auto;
+}
+.tags li {
+    height: 22px;
+    border: 1px solid #e9eaec;
+    padding: 0 2px 0 5px;
+    color: #666;
+    margin: 0 3px;
+    white-space: nowrap;
+    cursor: pointer;
+}
+.tags li:hover {
+    background-color: #f8f8f8;
+}
+.tags i {
+    font-style: normal;
+    padding: 0 3px;
+}
+.tags div {
+    padding: 0 10px;
+    background-color: #fff;
+    box-shadow: -3px 0 15px 3px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+button {
+    background-color: #409eff;
+    border: none;
+    color: #fff;
+    padding: 3px 7px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+main {
+    flex: 1;
+    padding: 10px;
+    background-color: #f0f0f0;
+    overflow-y: auto;
+}
+
+.collapsed nav {
+    flex: 0 0 64px;
+}
+.box {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+.box .top {
+    height: 25px;
+    margin-bottom: 10px;
+    display: flex;
+}
+.box .left {
+    width: 200px;
+    margin-right: 20px;
+}
+.box .top .left {
+    display: flex;
+}
+.box .top  input {
+    height: 100%;
+}
+.box .top  .ipt {
+    flex: 1;
+}
+.box .top .left input {
+    width: 100%;
+}
+.box .top .right  {
+    flex: 1;
+    display: flex;
+}
+.box .top .right .ipt input {
+    width: 100%;
+}
+.box .top .right button {
+    margin-left: 10px;
+}
+.box .bot {
+    flex: 1;
+    display: flex;
+    overflow: hidden;
+}
+.box .bot .left {
+    flex: 0 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+.bot .left select {
+    flex: 0 0 20px;
+    margin-bottom: 10px;
+}
+.box .bot .right {
+    flex: 1;
+}
+.box .bot .left select {
+    display: none;
+}
+.box .bot .tree {
+    overflow-y: auto;
+    background-color: lightgrey;
+}
+.box .bot .graph {
+    height: 100%;
+    border: 1px solid #666666;
+    flex: 1;
+}
+.box.add .top .saveAs, .box.add .top .delete {
+    display: none;
+}
+.box.add .bot select {
+    display: block;
+}
+.box.edit .top button {
+    display: block;
+}
+.box.preview .bot .left {
+ display: none;
+}
+.box.preview .top button {
+    display: none;
+}
