@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>2.使用自动 margin 实现 flex 布局下的 space-between</title>
+    <link rel="stylesheet" href="../../base.css">
+    <style>
+        .start li:last-child {
+            margin-right: auto;
+        }
+
+        .end li:first-child {
+            margin-left: auto;
+        }
+
+        .center  li:first-child {
+            margin-left: auto;
+        }
+        .center  li:last-child {
+            margin-right: auto;
+        }
+
+        .space-between li {
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .space-between li:first-child {
+            margin-left: 10px;
+        }
+        .space-between li:last-child {
+            margin-right: 10px;
+        }
+
+        .space-around li {
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
+</head>
+<body>
+<h1>2.使用自动 margin 实现 flex 布局下的 space-between</h1>
+
+<details open>
+    <summary>start</summary>
+    <ul class="start">
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+    </ul>
+</details>
+
+<details open>
+    <summary>end</summary>
+    <ul class="end">
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+    </ul>
+</details>
+
+<details open>
+    <summary>center</summary>
+    <ul class="center">
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+    </ul>
+</details>
+
+<details open>
+    <summary>space-between</summary>
+    <ul class="space-between">
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+    </ul>
+</details>
+
+<details open>
+    <summary>space-around</summary>
+    <ul class="space-around">
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+    </ul>
+</details>
+</body>
+</html>

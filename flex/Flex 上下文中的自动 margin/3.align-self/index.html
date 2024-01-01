@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>3.使用自动 margin 实现 flex 下的 align-self</title>
+    <link rel="stylesheet" href="../../base.css">
+    <style>
+        ul {
+            height: 8rem;
+        }
+        .center-1 li {
+            align-self: center;
+        }
+        .center-2 li {
+            margin-top: auto;
+            margin-bottom: auto;
+        }
+
+        .end-1 li {
+            align-self: flex-end;
+        }
+        .end-2 li {
+            margin-top: auto;
+        }
+    </style>
+</head>
+<body>
+<h1>3.使用自动 margin 实现 flex 下的 align-self</h1>
+
+<details open>
+    <summary>center</summary>
+    <ul class="center-1">
+        <li style="height: 2rem">1</li>
+        <li style="height: 3rem">2</li>
+        <li style="height: 4rem">3</li>
+        <li style="height: 5rem">4</li>
+    </ul>
+    <ul class="center-2">
+        <li style="height: 2rem">1</li>
+        <li style="height: 3rem">2</li>
+        <li style="height: 4rem">3</li>
+        <li style="height: 5rem">4</li>
+    </ul>
+</details>
+
+<details open>
+    <summary>end</summary>
+    <ul class="end-1">
+        <li style="height: 2rem">1</li>
+        <li style="height: 3rem">2</li>
+        <li style="height: 4rem">3</li>
+        <li style="height: 5rem">4</li>
+    </ul>
+    <ul class="end-2">
+        <li style="height: 2rem">1</li>
+        <li style="height: 3rem">2</li>
+        <li style="height: 4rem">3</li>
+        <li style="height: 5rem">4</li>
+    </ul>
+</details>
+
+
+
+
+</body>
+</html>
