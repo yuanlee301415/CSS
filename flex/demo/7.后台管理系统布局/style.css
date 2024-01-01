@@ -3,6 +3,16 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+*::-webkit-scrollbar {
+   width: 5px;
+   height: 5px;
+}
+*::-webkit-scrollbar-thumb {
+    background: lightgray; // 滑块颜色
+}
+
+
 html {
     font-size: 12px;
     line-height: 24px;
@@ -93,20 +103,37 @@ section {
     flex: 1;
     display: flex;
     flex-direction: column;
+    overflow: hidden;
 }
 .tags {
-    flex: 0 0 30px;
-    background-color: #fff;
-    box-shadow: 10px 5px 10px #f00;
+    height: 50px;
+}
+.tags .tags-box {
     display: flex;
+    height: 40px;
+    border-bottom: 1px solid #ccc;
+    box-shadow: 1px 3px 10px #ccc;
 }
-.tags ul {
+.tags .list {
     flex: 1;
+    overflow: hidden;
+}
+.tags .btn {
+    flex-shrink: 0;
+    width: 80px;
+    text-align: center;
+    margin-left: 10px;
+    box-shadow: -3px 0 15px 3px rgba(0, 0, 0, 0.3);
+}
+.tags .btn button {
+    margin-top: 6px;
 }
 .tags ul {
+    height: 100%;
     display: flex;
     align-items: center;
     overflow-x: auto;
+    overflow-y: hidden;
 }
 .tags li {
     height: 22px;
@@ -124,14 +151,6 @@ section {
     font-style: normal;
     padding: 0 3px;
 }
-.tags div {
-    padding: 0 10px;
-    background-color: #fff;
-    box-shadow: -3px 0 15px 3px rgba(0, 0, 0, 0.1);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 button {
     background-color: #409eff;
     border: none;
@@ -142,9 +161,9 @@ button {
 }
 main {
     flex: 1;
-    padding: 10px;
-    background-color: #f0f0f0;
+    padding: 0 10px 10px;
     overflow-y: auto;
+    background-color: #fafafa;
 }
 
 .collapsed nav {
@@ -208,7 +227,6 @@ main {
 }
 .box .bot .tree {
     overflow-y: auto;
-    background-color: lightgrey;
 }
 .box .bot .graph {
     height: 100%;
