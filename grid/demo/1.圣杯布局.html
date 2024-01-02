@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>1.圣杯布局</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        html {
+            font-size: 14px;
+            line-height: 40px;
+        }
+        header {
+            background-color: lightskyblue;
+        }
+        main {
+            background-color: lightseagreen;
+        }
+        footer {
+            background-color: lightgreen;
+        }
+        .app {
+            height: 100vh;
+            display: grid;
+            grid-template-rows: 100px 1fr 150px;
+        }
+
+        nav {
+            background-color: lightslategray;
+        }
+        section {
+            background-color: lightblue;
+        }
+        aside {
+            background-color: lightpink;
+        }
+
+        main {
+            display: grid;
+            grid-template-columns: 200px 1fr 150px;
+            overflow: hidden;
+        }
+        nav {
+            overflow: hidden;
+        }
+        nav ul {
+            height: 100%;
+            overflow: auto;
+        }
+
+        section {
+            display: grid;
+            grid-template-rows: 40px 1fr;
+        }
+    </style>
+</head>
+<body>
+<div class="app">
+    <header>Header</header>
+    <main>
+        <nav>
+            <ul>
+                <li>Menu-1</li>
+                <li>Menu-2</li>
+                <li>Menu-3</li>
+                <li>Menu-4</li>
+                <li>Menu-5</li>
+                <li>Menu-6</li>
+                <li>Menu-7</li>
+                <li>Menu-8</li>
+                <li>Menu-9</li>
+                <li>Menu-10</li>
+                <li>Menu-11</li>
+                <li>Menu-12</li>
+                <li>Menu-13</li>
+                <li>Menu-14</li>
+                <li>Menu-15</li>
+                <li>Menu-16</li>
+                <li>Menu-17</li>
+                <li>Menu-18</li>
+                <li>Menu-19</li>
+                <li>Menu-20</li>
+            </ul>
+        </nav>
+        <section>Section</section>
+        <aside>Aside</aside>
+    </main>
+    <footer>Footer</footer>
+</div>
+</body>
+</html>
