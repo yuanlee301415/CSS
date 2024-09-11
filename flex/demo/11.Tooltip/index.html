@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tooltip</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        .tooltip {
+            border: 1px solid red;
+            border-radius: 10px;
+            position: absolute;
+            left: 100px;
+            top: 100px;
+            padding: 10px;
+            line-height: 2;
+        }
+    </style>
+</head>
+<body>
+<div class="tooltip">
+    <p>8/4</p>
+    <div style="display: flex; justify-content: space-between;"><span>主机日告警数</span><b style="margin-left: 20px;">264次</b></div>
+    <div style="display: flex; justify-content: space-between;"><span>网络日告警数</span><b style="margin-left: 20px;">641次</b></div>
+    <div style="display: flex; justify-content: space-between;"><span>主机健康度日均值</span><b style="margin-left: 20px;">64%</b></div>
+    <div style="display: flex; justify-content: space-between;"><span>网络健康度日均值</span><b style="margin-left: 20px;">131%</b></div>
+</div>
+</body>
+</html>
