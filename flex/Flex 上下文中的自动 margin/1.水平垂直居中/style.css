@@ -1,0 +1,36 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 14px;
+    line-height: 28px;
+}
+
+main {
+    display: flex;
+    height: 100vh;
+}
+aside {
+    width: 200px;
+    background-color: lightblue;
+}
+header {
+    background-color: lightskyblue;
+    height: 50px;
+}
+section {
+    flex: 1;
+}
+dl {
+    display: flex;
+    height: 500px;
+    background-color: lightsteelblue;
+}
+dd {
+    width: 100px;
+    height: 100px;
+    background-color: lightseagreen;
+    margin: auto;
+}
