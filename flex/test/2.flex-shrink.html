@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>2.flex-shrink</title>
+    <link rel="stylesheet" href="../base.css">
+    <style>
+        ul {
+            border: none;
+            width: 600px;
+        }
+        li {
+            font-size: 14px;
+            line-height: 24px;
+            margin: 0;
+            border: none;
+            width: 300px;
+        }
+        li:nth-child(1) {
+            background-color: lightblue;
+        }
+        li:nth-child(2) {
+            background-color: lightcoral;
+        }
+        li:nth-child(3) {
+            background-color: lightgreen;
+        }
+    </style>
+</head>
+<body>
+<h1>flex-shrink</h1>
+<h2>总宽：600px, 各项宽度：300px</h2>
+
+<details open>
+    <summary>收缩宽度：（总宽 - 各项宽度 * 3）/ （1 + 1）</summary>
+    <summary>收缩宽度：（600 - 300 * 3）/ 2 = -150</summary>
+    <ul>
+        <li style="flex-shrink: 0">flex-shrink: 0(300)</li>
+        <li>300 + -150</li>
+        <li>300 + -150</li>
+    </ul>
+</details>
+
+<details open>
+    <summary>收缩宽度：（总宽 - 各项宽度 * 3）/ （1 + 2）</summary>
+    <summary>收缩宽度：（600 - 300 * 3）/ 3 = -100</summary>
+    <ul>
+        <li style="flex-shrink: 0">flex-shrink: 0(300 + -100 * 0 = 300)</li>
+        <li style="flex-shrink: 1">flex-shrink: 1(300 + -100 * 1 = 200)</li>
+        <li style="flex-shrink: 2">flex-shrink: 2(300 + -100 * 2 = 100)</li>
+    </ul>
+</details>
+
+<details open>
+    <summary>收缩宽度：（总宽 - 各项宽度 * 3）/ （1 + 2 + 3）</summary>
+    <summary>收缩宽度：（600 - 300 * 3）/ 6 = -50</summary>
+    <ul>
+        <li style="flex-shrink: 1">flex-shrink: 1(300 + -50 * 1 = 250)</li>
+        <li style="flex-shrink: 2">flex-shrink: 1(300 + -50 * 2 = 200)</li>
+        <li style="flex-shrink: 3">flex-shrink: 1(300 + -50 * 3 = 150)</li>
+    </ul>
+</details>
+
+</body>
+</html>

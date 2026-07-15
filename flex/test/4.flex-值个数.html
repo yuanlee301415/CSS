@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>4.flex-值个数</title>
+    <link rel="stylesheet" href="../base.css">
+    <style>
+        .flex-1 li {
+            flex: 1;
+        }
+        .flex-2 li {
+            flex: 1 1;
+        }
+        .flex-3 li {
+            flex: 50%;
+        }
+    </style>
+</head>
+<body>
+<h1>flex</h1>
+
+<details open>
+    <summary>flex: 1 = flex: 1 1 0%</summary>
+    <ul class="flex-1">
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+    </ul>
+</details>
+
+<details open>
+    <summary>flex: 1 1 = flex: 1 1 0%</summary>
+    <ul class="flex-2">
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+    </ul>
+</details>
+
+<details open>
+    <summary>flex: 50% = flex: 1 1 50%</summary>
+    <ul class="flex-3">
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+    </ul>
+</details>
+
+</body>
+</html>
