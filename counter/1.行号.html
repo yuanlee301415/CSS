@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>行号</title>
+    <style>
+        ol {
+            counter-reset: count;
+        }
+
+        li {
+            color: #111;
+            counter-increment: count;
+            list-style: none;
+        }
+
+        li::before {
+            content: counter(count);
+            color: #aaa;
+            padding-right: 1em;
+        }
+    </style>
+</head>
+<body>
+<ol>
+    <li><span>let</span> numbers = [<span>4</span>, <span>2</span>, <span>9</span>, <span>6</span>, <span>7</span>];</li>
+    <li>numbers.<span>sort</span>(<span>function</span>(<span class="hljs-params">a, b</span>) { </li> <li><span>return</span> a - b;</li> 
+    <li>});</li>
+    <li><span>console</span>.<span>log</span>(numbers); <span>// 输出：[2, 4, 6, 7, 9]</span></li>
+</ol>
+</body>
+</html>
