@@ -1,0 +1,56 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 14px;
+    line-height: 28px;
+}
+
+main {
+    display: flex;
+    height: 100vh;
+}
+aside {
+    width: 200px;
+    background-color: lightblue;
+}
+section {
+    flex: 1;
+}
+header {
+    background-color: lightskyblue;
+    height: 50px;
+}
+form {
+    background-color: lightgrey;
+    border: 1px solid lightseagreen;
+}
+ul {
+    display: flex;
+}
+li {
+    list-style: none;
+    flex-basis: 100%;
+}
+
+dl {
+    display: flex;
+    padding: 10px;
+}
+dd {
+    padding: 0 10px;
+}
+dd:first-child {
+    padding-left: 0;
+}
+dd:last-child {
+    padding-right: 0;
+}
+dt {
+    flex: 1;
+}
+dt input {
+    width: 100%;
+}

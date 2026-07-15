@@ -1,0 +1,61 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 14px;
+    line-height: 28px;
+}
+
+main {
+    display: flex;
+    height: 100vh;
+}
+aside {
+    width: 200px;
+    background-color: lightblue;
+}
+header {
+    background-color: lightskyblue;
+    height: 50px;
+}
+section {
+    flex: 1;
+}
+
+li {
+    list-style: none;
+    margin: 10px;
+    border-bottom: 1px solid darkgrey;
+    display: flex;
+}
+.avatar {
+    width: 50px;
+    height: 50px;
+    margin-top: 5px;
+    overflow: hidden;
+}
+.avatar img {
+    width: 100%;
+}
+
+dl {
+    flex: 1;
+    margin-left: 10px;
+}
+a {
+    color: mediumblue;
+}
+.bot {
+    display: flex;
+}
+.bot time {
+    flex: 1;
+    color: #999;
+}
+.bot div {
+    width: 50px;
+    display: flex;
+    justify-content: space-between;
+}
